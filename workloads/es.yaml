@@ -73,6 +73,12 @@ spec:
         loadBalancerSourceRanges:
           - 192.150.10.200/29
           - 192.150.10.208/29
+        ports:
+        - name: http
+          nodePort: 31418
+          port: 80
+          protocal: TCP
+          targetPort: 80
      tls:
        selfSignedCertificate:
          diabled: true
